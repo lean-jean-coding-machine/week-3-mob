@@ -5,15 +5,15 @@ body {
     text-align: center;
     background-color: #96E0C1;
     font-family: 'Artifika', serif;
+    margin: 0;
 }
 
 header {
     font-family: 'Sofia', cursive;
     text-align: center;
-}
-
-h1 {
     background-color: #F97253;
+    margin: 0;
+    padding: .8em 0;
 }
 
 label {
