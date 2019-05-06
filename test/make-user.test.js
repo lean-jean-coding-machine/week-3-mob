@@ -1,4 +1,4 @@
-import makeUser from '../src/make-user.js';
+import makeUser from '../src/home/make-user.js';
 const test = QUnit.test;
 
 QUnit.module('makeUser');

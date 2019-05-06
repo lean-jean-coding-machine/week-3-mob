@@ -15,33 +15,34 @@
         <h2>Sign up below to increase your mood!</h2>
     </header>
     <main>
-        <form>
-            <label for="username">Please enter your name:</label>
-            <input id="username" type="text">
+        <form id="form">
+            <label for="name">Please enter your name:</label>
+            <input id="name" name="name" type="text">
 
             <fieldset>
                 <legend>Pick your adventure buddy!</legend>
                 <label for="dog">
-                    <input type="radio" name="dog" id="dog">
+                    <input type="radio" name="buddy" id="dog" required value="dog">
                     Dog
                 </label>
                 <label for="cat">
-                    <input type="radio" name="cat" id="cat" required>
+                    <input type="radio" name="buddy" id="cat" required value="cat">
                     Cat
                 </label>
                 <label for="Bunny">
-                    <input type="radio" name="bunny" id="bunny">
+                    <input type="radio" name="buddy" id="bunny" required value="bunny">
                     Bunny
                 </label>
                 <label for="lizard">
-                    <input type="radio" name="lizard" id="lizard">
-                    Lizard
+                    <input type="radio" name="buddy" id="lizard" required value="bird">
+                    Bird
                 </label>
             </fieldset>
 
-            <button>Start your adventure!</button>
+            <button id="submit">Start your adventure!</button>
         </form>
     </main>
+    <script type="module" src="./src/home/index.js"></script>
 </body>
 
 </html>
