@@ -16,6 +16,10 @@ header {
     padding: .8em 0;
 }
 
+img {
+    vertical-align: middle;
+}
+
 label {
     font-size: 1.3em;
 }
