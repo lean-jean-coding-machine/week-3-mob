@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/styles.css">
     <title>Gotta Pet Them All!</title>
 </head>
 
@@ -20,14 +21,22 @@
 
             <fieldset>
                 <legend>Pick your adventure buddy!</legend>
-                <label for="dog">Dog</label>
-                <input type="radio" name="dog" id="dog">
-                <label for="cat">Cat</label>
-                <input type="radio" name="cat" id="cat">
-                <label for="Bunny">Bunny</label>
-                <input type="radio" name="bunny" id="bunny">
-                <label for="lizard">Lizard</label>
-                <input type="radio" name="lizard" id="lizard">
+                <label for="dog">
+                    <input type="radio" name="dog" id="dog">
+                    Dog
+                </label>
+                <label for="cat">
+                <input type="radio" name="cat" id="cat" required>
+                Cat
+            </label>
+                <label for="Bunny">
+                    <input type="radio" name="bunny" id="bunny">
+                    Bunny
+                </label>
+                <label for="lizard">
+                    <input type="radio" name="lizard" id="lizard">
+                    Lizard
+                </label>
             </fieldset>
 
             <button>Start your adventure!</button>
