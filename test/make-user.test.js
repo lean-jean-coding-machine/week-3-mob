@@ -8,7 +8,6 @@ test('makeUser function creates user object from form data', (assert) => {
     // Set up your parameters and expectations
     formData.set('name', 'Melinda');
     formData.set('buddy', 'dog');
-    console.log(formData);
     const expected = {
         name: 'Melinda',
         buddy: 'dog',
