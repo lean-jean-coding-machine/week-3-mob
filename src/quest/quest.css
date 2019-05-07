@@ -17,3 +17,7 @@ button {
 #results {
     background-color: #F8CA6E;
 }
+
+label {
+    display: block;
+}
