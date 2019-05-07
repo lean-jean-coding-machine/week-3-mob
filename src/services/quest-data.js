@@ -52,6 +52,6 @@ const park = {
     }]
 };
 
-const quests = [park];
+const questArray = [park];
 
-export default quests;
+export default questArray;
