@@ -8,7 +8,7 @@ const treats = document.getElementById('treats');
 const user = api.getUser();
 
 if(!user) {
-    window.location = './';
+    window.location = '../../';
 }
 
 username.textContent = user.name;
