@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+@import url('https://fonts.googleapis.com/css?family=Artifika');
+
+body {
+    text-align: center;
+    background-color: #96E0C1;
+    font-family: 'Artifika', serif;
+    margin: 0;
+}
+
+header {
+    font-family: 'Sofia', cursive;
+    background-color: #F97253;
+    margin: 0;
+    padding: .8em 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+label {
+    font-size: 1.3em;
+}
+
+input {
+    margin: 2em 0;
+}
+
+button {
+    font-size: 1.2em;
+    font-family: 'Sofia', cursive;
+    margin-top: 2em;
+    background-color: #F8CA6E;
+    width: 15em;
+    height: 3em;
+}

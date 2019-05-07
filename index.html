@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Gotta Pet Them All!</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gotta Pet Them All!</h1>
+    </header>
+    <main>
+        <h2>Sign up below to increase your mood!</h2>
+        <form id="form">
+            <label for="name">Please enter your name:</label>
+            <input id="name" name="name" type="text">
+            <fieldset>
+                <legend>Pick your adventure buddy!</legend>
+                <label for="dog">
+                    <img src="./assets/dog.png">
+                    Dog
+                    <input type="radio" name="buddy" id="dog" required value="dog">
+                </label>
+                <label for="cat">
+                    <img src="./assets/cat.png">
+                    Cat
+                    <input type="radio" name="buddy" id="cat" required value="cat">
+                </label>
+                <label for="Bunny">
+                    <img src="./assets/bunny.png">
+                    Bunny
+                    <input type="radio" name="buddy" id="bunny" required value="bunny">
+                </label>
+                <label for="bird">
+                    <img src="./assets/bird.png">
+                    Bird
+                    <input type="radio" name="buddy" id="bird" required value="bird">
+                </label>
+            </fieldset>
+
+            <button id="submit">Start your adventure!</button>
+        </form>
+    </main>
+    <script type="module" src="./src/home/index.js"></script>
+</body>
+
+</html>
