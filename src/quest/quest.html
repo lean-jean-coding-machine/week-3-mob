@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quests</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./quest.css">
+    <title>Quests</title>
 </head>
 <body>
     <header>
+        <section></section>
         <h1>Gotta Pet Them All!</h1>
         <section id="user-info">
             <img id="animal-avatar" src="" alt="animal companion icon">
@@ -17,6 +19,41 @@
             treats:<span id="treats"></span>
         </section>
     </header>
+    <main>
+        <section>
+            <h2>Go To The Park</h2>
+            <img src="../../assets/quest-photos/puppies.jpg" alt="cute puppies">
+        </section>
+        <section>
+            <p id="quest-description"></p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in, amet iusto at id obcaecati laboriosam quia! Nesciunt non veniam corporis eaque, harum iste ratione natus ipsum, quam est aspernatur.
+        </section>
+        <form id="quest-form">
+            <p>
+                <label for="opt1">Option 1
+                    <input type="radio" name="quest-option" required value="opt1">
+                </label>
+            </p>
+
+            <p>
+                <label for="opt2">Option 2
+                    <input type="radio" name="quest-option" required value="opt2">
+                </label>
+            </p>
+
+            <p>
+                <label for="opt3">Option 3
+                    <input type="radio" name="quest-option" required value="opt3">
+                </label>
+            </p>
+            <button id="submit-choice">Submit</button>
+        </form>
+        <section id="results" class="hidden">Lorem, ipsum dolor sit amet consectetur 
+            adipisicing elit. Excepturi autem laborum voluptas 
+            inventore quo dolore, libero facilis facere minima rem 
+            debitis, ipsam dolorem voluptatem reprehenderit quam 
+            accusamus doloribus minus voluptates?</section>
+    </main>
 
 </body>
 </html>

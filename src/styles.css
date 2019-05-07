@@ -38,3 +38,7 @@ button {
     width: 15em;
     height: 3em;
 }
+
+.hidden {
+    display: none;
+}

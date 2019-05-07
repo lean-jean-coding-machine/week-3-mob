@@ -1,0 +1,19 @@
+img {
+    max-width: 20em;
+}
+
+form {
+    font-size: .7em;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    margin: 0 0 2em 0;
+}
+
+#results {
+    background-color: #F8CA6E;
+}
