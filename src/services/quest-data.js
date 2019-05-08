@@ -25,7 +25,7 @@ const park = {
         treats: 0
     }, {
         id: 'treat-dogs',
-        description: 'TREEEAAAT',
+        description: 'GIVE A TREEEAAAT',
         result: ` 
         Thanking the universe for your luck, you remember that you have a TREAT in 
         your pocket. It's small, but you manage to break it in half and are nearly 
@@ -150,7 +150,7 @@ const farm = {
         treats: 0
     }, {
         id: 'treat-goat',
-        description: 'TREEEAAAT',
+        description: 'GIVE A TREEEAAAT',
         result: ` 
         You are frozen for a minute just staring through the windshield at this goat in a 
         sweater just standing on your car. You definitely want to pet this goat, I mean, DUH!
