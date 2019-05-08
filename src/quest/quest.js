@@ -1,6 +1,7 @@
 import api from '../services/api.js';
 import createChoice from './create-choice.js';
 import loadProfile from '../load-profile.js';
+// import scoreQuest from './score-quest.js';
 
 loadProfile();
 
@@ -13,7 +14,6 @@ const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
 
 const quest = api.getQuest(questId);
-console.log(description);
 title.textContent = quest.title;
 image.src = '../../assets/quest-photos/' + quest.image;
 description.textContent = quest.description;
