@@ -37,11 +37,14 @@ formChoice.addEventListener('submit', event => {
     scoreQuest(user, choiceData);
     api.saveUser(user);
     loadProfile();
-    console.log(questResult);
     questResult.textContent = choiceData.result;
+
     description.classList.add('hidden');
     formChoice.classList.add('hidden');
     questResult.classList.remove('hidden');
     mapButton.classList.remove('hidden');
+});
 
+mapButton.addEventListener('click', () => {
+    window.location = '../map/map.html';
 });
