@@ -9,7 +9,7 @@ test('Makes html label and input element', (assert) => {
         description: 'Option 1'
     };
 
-    const expected = '<label for="puppies">Option 1<input type="radio" name="quest-option" required value="puppies"></label>';
+    const expected = '<label>Option 1<input type="radio" name="quest-option" required="true" value="puppies"></label>';
     //Act 
     // Call the function you're testing and set the result to a const
     const dom = createChoice(choice);
