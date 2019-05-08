@@ -1,21 +1,6 @@
+import createChoice from '../src/quest/create-choice.js';
 const test = QUnit.test;
 QUnit.module('createChoices');
-
-function createChoices(choice) {
-    const label = document.createElement('label');
-    label.for = choice.id;
-    label.textContent = choice.description;
-
-    const input = document.createElement('input');
-    input.type = 'radio';
-    input.name = 'quest-option';
-    input.required = true;
-    input.value = choice.id;
-
-    label.appendChild(input);
-
-    return label;
-}
 
 test('Makes html label and input element', (assert) => {
     //Arrange
@@ -27,7 +12,7 @@ test('Makes html label and input element', (assert) => {
     const expected = '<label for="puppies">Option 1<input type="radio" name="quest-option" required value="puppies"></label>';
     //Act 
     // Call the function you're testing and set the result to a const
-    const dom = createChoices(choice);
+    const dom = createChoice(choice);
     //Assert
     assert.equal(dom.outerHTML, expected);
 });
