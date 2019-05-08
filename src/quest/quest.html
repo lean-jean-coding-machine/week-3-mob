@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./quest.css">
+    <title>Quests</title>
+</head>
+<body>
+    <header>
+        <section></section>
+        <h1>Gotta Pet Them All!</h1>
+        <section id="user-info">
+            <img id="animal-avatar" src="" alt="animal companion icon">
+            <span id="username"></span>
+            mood:<span id="mood"></span>
+            treats:<span id="treats"></span>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h2 id="quest-title">Go To The Park</h2>
+            <img id="quest-img" src="../../assets/quest-photos/puppies.jpg" alt="cute puppies">
+            <audio id="audio" autoplay></audio>
+        </section>
+        <section>
+            <p id="description"></p>
+        </section>
+        <form id="quest-form">
+            <p id="choices"></p>
+            <button id="submit-choice">Submit</button>
+        </form>
+        <section id="result" class="hidden"></section>
+        <button id="map" class="hidden">return to adventures</button>
+    </main>
+<script type="module" src="quest.js"></script>
+</body>
+</html>

@@ -1,17 +1,16 @@
-header {
-    display: flex;
-}
-
 #user-info {
     font-family: 'Artifika', serif;
-    flex-grow: 1;
-}
-
-h1 {
-    flex-grow: 2; 
 }
 
 img {
     height: 40%;
     width: auto;
+}
+a {
+    display: block;
+    margin: 1em;
+}
+
+#user-info {
+    font-family: 'Artifika', serif;
 }

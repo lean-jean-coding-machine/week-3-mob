@@ -13,7 +13,8 @@ test('makeUser function creates user object from form data', (assert) => {
         name: 'Melinda',
         buddy: 'dog',
         mood: 30,
-        treats: 1
+        treats: 1,
+        completed: {}
     };
     //Act 
     // Call the function you're testing and set the result to a const
