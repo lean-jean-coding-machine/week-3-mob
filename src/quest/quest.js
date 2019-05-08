@@ -14,7 +14,7 @@ const formChoice = document.getElementById('quest-form');
 const questResult = document.getElementById('result');
 const mapButton = document.getElementById('map');
 const audio = document.getElementById('audio');
-const user = api.getUser();
+let user = api.getUser();
 
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
@@ -36,7 +36,7 @@ formChoice.addEventListener('submit', event => {
     const choiceId = formData.get('quest-option');
     const choiceData = findById(quest.choices, choiceId);
    
-    scoreQuest(user, choiceData, quest);
+    user = scoreQuest(user, choiceData, quest);
     api.saveUser(user);
     loadProfile();
     questResult.textContent = choiceData.result;
