@@ -3,7 +3,8 @@ function makeUser(formData) {
         name: formData.get('name'),
         buddy: formData.get('buddy'),
         mood: 30,
-        treats: 1
+        treats: 1, 
+        completed: {},
     };
     return user;
 }

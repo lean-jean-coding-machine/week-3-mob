@@ -34,7 +34,7 @@ formChoice.addEventListener('submit', event => {
     const choiceId = formData.get('quest-option');
     const choiceData = findById(quest.choices, choiceId);
    
-    scoreQuest(user, choiceData);
+    scoreQuest(user, choiceData, quest);
     api.saveUser(user);
     loadProfile();
     questResult.textContent = choiceData.result;

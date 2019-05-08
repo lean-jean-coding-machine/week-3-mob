@@ -10,7 +10,8 @@ test('Adjust user profile based on quest choice', (assert) => {
         name: 'Melinda',
         buddy: 'dog',
         mood: 30,
-        treats: 1
+        treats: 1,
+        completed: {}
     };
 
     const choice = {
@@ -18,14 +19,22 @@ test('Adjust user profile based on quest choice', (assert) => {
         treats: -1
     };
 
+    const quest = {
+        id: 'park'
+    };
+
     const expected = {
         name: 'Melinda',
         buddy: 'dog',
         mood: 50,
-        treats: 0
+        treats: 0,
+        completed: {
+            park: true
+        }
     };
+
     //Act 
-    const result = scoreQuest(user, choice);
+    const result = scoreQuest(user, choice, quest);
     // Call the function you're testing and set the result to a const
     //Assert
     assert.deepEqual(result, expected);
