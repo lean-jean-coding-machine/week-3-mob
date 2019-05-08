@@ -11,7 +11,9 @@ const image = document.getElementById('quest-img');
 const title = document.getElementById('quest-title');
 const description = document.getElementById('description');
 const formChoice = document.getElementById('quest-form');
+const questResult = document.getElementById('result');
 const user = api.getUser();
+const mapButton = document.getElementById('map');
 
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
@@ -35,4 +37,11 @@ formChoice.addEventListener('submit', event => {
     scoreQuest(user, choiceData);
     api.saveUser(user);
     loadProfile();
+    console.log(questResult);
+    questResult.textContent = choiceData.result;
+    description.classList.add('hidden');
+    formChoice.classList.add('hidden');
+    questResult.classList.remove('hidden');
+    mapButton.classList.remove('hidden');
+
 });
