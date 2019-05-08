@@ -2,7 +2,6 @@ const park = {
     id: 'park',
     title: 'Go to the Park',
     image: 'puppies.jpg',
-    action: 'puppy-bark.mp3',
     description: `
     You decide to leave your house-- good job! You're hopeful that you might see something 
     that cheers you up. On your way to the park, you notice that a woman walking not one 
@@ -59,7 +58,6 @@ const forest = {
     id: 'forest',
     title: 'Go to the Forest',
     image: 'frog.jpg',
-    action: 'frog-croak.mp3',
     description: `
     You decide that you haven't been on a vacation in far too long, so you stick your 
     adventure buddy in a carry on, flip a coin to decide your desitination, and hop on a 
@@ -120,7 +118,6 @@ const farm = {
     id: 'farm',
     title: 'Go to the Farm',
     image: 'goat.jpg',
-    action: 'goat-bah.mp3',
     description: `
     Your friend who owns a farm recently purchased some goats, and they invite you to visit. 
     So you throw your adventure buddy in the car and head to the farm--because--GOATS! As 
