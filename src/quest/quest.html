@@ -21,27 +21,14 @@
     </header>
     <main>
         <section>
-            <h2>Go To The Park</h2>
-            <img src="../../assets/quest-photos/puppies.jpg" alt="cute puppies">
+            <h2 id="quest-title">Go To The Park</h2>
+            <img id="quest-img" src="../../assets/quest-photos/puppies.jpg" alt="cute puppies">
         </section>
         <section>
-            <p id="quest-description"></p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in, amet iusto at id obcaecati laboriosam quia! Nesciunt non veniam corporis eaque, harum iste ratione natus ipsum, quam est aspernatur.
+            <p id="description"></p>
         </section>
         <form id="quest-form">
-            <p id="choices">
-                <label for="opt1">Option 1
-                    <input type="radio" name="quest-option" required value="opt1">
-                </label>
-        
-                <label for="opt2">Option 2
-                    <input type="radio" name="quest-option" required value="opt2">
-                </label>
-    
-                <label for="opt3">Option 3
-                    <input type="radio" name="quest-option" required value="opt3">
-                </label>
-            </p>
+            <p id="choices"></p>
             <button id="submit-choice">Submit</button>
         </form>
         <section id="results" class="hidden">Lorem, ipsum dolor sit amet consectetur 
@@ -50,6 +37,6 @@
             debitis, ipsam dolorem voluptatem reprehenderit quam 
             accusamus doloribus minus voluptates?</section>
     </main>
-
+<script type="module" src="quest.js"></script>
 </body>
 </html>
