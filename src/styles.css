@@ -46,3 +46,8 @@ button {
 #user-info {
     font-family: 'Artifika', serif;
 }
+
+#animal-avatar {
+    height: 50px;
+    width: auto;
+}
