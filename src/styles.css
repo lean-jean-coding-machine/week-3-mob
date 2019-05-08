@@ -42,3 +42,7 @@ button {
 .hidden {
     display: none;
 }
+
+#user-info {
+    font-family: 'Artifika', serif;
+}
