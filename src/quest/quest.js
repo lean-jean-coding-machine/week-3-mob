@@ -2,6 +2,7 @@ import api from '../services/api.js';
 import createChoice from './create-choice.js';
 import loadProfile from '../load-profile.js';
 import scoreQuest from './score-quest.js';
+import findById from '../find-by-id.js';
 
 loadProfile();
 
@@ -27,15 +28,11 @@ for(let i = 0; i < quest.choices.length; i++) {
 
 formChoice.addEventListener('submit', event => {
     event.preventDefault();
-    // const formData = new FormData(formChoice);
-    // const choiceId = formData.get('quest-option');
-    // let choice = {};
-    // for(let i = 0; i < quest.choices.length; i++) {
-    //     if(quest.choices[i].id === choiceId) {
-    //         choice = quest.choices[i];
-    //     }
-    // }
-    // scoreQuest(user, choice);
-    // api.saveUser();
-    // loadProfile();
+    const formData = new FormData(formChoice);
+    const choiceId = formData.get('quest-option');
+    const choiceData = findById(quest.choices, choiceId);
+   
+    scoreQuest(user, choiceData);
+    api.saveUser(user);
+    loadProfile();
 });
