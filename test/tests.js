@@ -8,3 +8,4 @@ import './create-choice.test.js';
 import './has-completed-all-quests.test.js';
 import './is-sad.test.js';
 import './score-mood.test.js';
+import './score-treat.test.js';
