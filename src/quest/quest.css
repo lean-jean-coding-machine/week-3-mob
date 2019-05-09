@@ -26,3 +26,7 @@ label {
 #user-info {
     font-family: 'Artifika', serif;
 }
+
+#description {
+    margin: 2em;
+}
