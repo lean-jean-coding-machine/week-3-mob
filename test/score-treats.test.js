@@ -1,13 +1,7 @@
+import scoreTreats from '../src/end/score-treats.js';
 const test = QUnit.test;
 
 QUnit.module('scoreTreats');
-function scoreTreats(treats) {
-    if(treats <= 0) {
-        return 'poor';
-    } else {
-        return 'wealthy';
-    }
-}
 
 test('test returns poor if user has no treats', (assert) => {
     //Arrange
