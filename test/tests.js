@@ -6,3 +6,4 @@ import './score-quest.test.js';
 import './find-by-id.test.js';
 import './create-choice.test.js';
 import './has-completed-all-quests.test.js';
+import './is-sad.test.js';
