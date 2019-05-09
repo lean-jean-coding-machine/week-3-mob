@@ -1,17 +1,29 @@
 import api from '../services/api.js';
+import loadProfile from '../load-profile.js';
+import createQuestLink from './create-quest-link.js';
+import createCompletedQuest from './create-completed-quest.js';
+import isSad from './is-sad.js';
+import hasCompletedAllQuests from './has-completed-all-quests.js';
 
-const username = document.getElementById('username');
-const buddy = document.getElementById('animal-avatar');
-const mood = document.getElementById('mood');
-const treats = document.getElementById('treats');
+loadProfile();
 
+const nav = document.getElementById('quests');
+
+const quests = api.getQuests();
 const user = api.getUser();
 
-if(!user) {
-    window.location = '../../';
+if(isSad(user) || hasCompletedAllQuests(user, quests)) {
+    window.location = '../end/end.html';
 }
-
-username.textContent = user.name;
-buddy.src = '../../assets/' + user.buddy + '.png';
-mood.textContent = user.mood;
-treats.textContent = user.treats;
+//loop over quest array
+for(let i = 0; i < quests.length; i++) {
+    //create links to append to the nav (parent element)
+    let quest = quests[i];
+    let dom = null;
+    if(user.completed[quest.id]) {
+        dom = createCompletedQuest(quest);
+    } else {
+        dom = createQuestLink(quest);
+    }
+    nav.appendChild(dom);
+}

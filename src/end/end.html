@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quests</title>
+    <title>End Game</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="./map.css">
 </head>
 
 <body>
@@ -21,10 +20,14 @@
             treats:<span id="treats"></span>
         </section>
     </header>
-    <nav id="quests">
-        <h2>Petting Adventures</h2>
-    </nav>
-    <script type="module" src="./map.js"></script>
+
+    <section id="result-section">
+        <h2>Your adventure has ended!</h2>
+        <p id="result-text"></p>
+        <!-- below link is relative not absolute-->
+        <a href="../../index.html"><button>Play Again</button></a>
+    </section>
+    <script type="module" src="./end.js"></script>
 </body>
 
 </html>

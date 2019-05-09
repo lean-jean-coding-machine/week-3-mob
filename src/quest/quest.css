@@ -1,0 +1,32 @@
+img {
+    max-width: 20em;
+}
+
+form {
+    font-size: .7em;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    margin: 1.5em 0 2em 0;
+}
+
+#result {
+    background-color: #F97253;
+    margin-top: 1.5em;
+}
+
+label {
+    display: block;
+}
+
+#user-info {
+    font-family: 'Artifika', serif;
+}
+
+#description {
+    margin: 2em;
+}
