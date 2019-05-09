@@ -12,7 +12,7 @@ test('makeUser function creates user object from form data', (assert) => {
     const expected = {
         name: 'Melinda',
         buddy: 'dog',
-        mood: 30,
+        mood: 60,
         treats: 1,
         completed: {}
     };
