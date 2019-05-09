@@ -14,3 +14,8 @@ a {
 #user-info {
     font-family: 'Artifika', serif;
 }
+
+#quests span {
+    display: block;
+    margin: 1em;
+}
