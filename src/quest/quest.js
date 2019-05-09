@@ -14,6 +14,7 @@ const formChoice = document.getElementById('quest-form');
 const questResult = document.getElementById('result');
 const mapButton = document.getElementById('map');
 const audio = document.getElementById('audio');
+const noTreatsMessage = document.getElementById('no-treats');
 let user = api.getUser();
 
 const searchParams = new URLSearchParams(window.location.search);
@@ -36,15 +37,20 @@ formChoice.addEventListener('submit', event => {
     const choiceId = formData.get('quest-option');
     const choiceData = findById(quest.choices, choiceId);
    
-    user = scoreQuest(user, choiceData, quest);
-    api.saveUser(user);
-    loadProfile();
-    questResult.textContent = choiceData.result;
-
-    description.classList.add('hidden');
-    formChoice.classList.add('hidden');
-    questResult.classList.remove('hidden');
-    mapButton.classList.remove('hidden');
+    if(choiceData.treats + user.treats >= 0) {
+        user = scoreQuest(user, choiceData, quest);
+        api.saveUser(user);
+        loadProfile();
+        questResult.textContent = choiceData.result;
+        
+        noTreatsMessage.classList.add('hidden');
+        description.classList.add('hidden');
+        formChoice.classList.add('hidden');
+        questResult.classList.remove('hidden');
+        mapButton.classList.remove('hidden');
+    } else {
+        noTreatsMessage.classList.remove('hidden');
+    }
 });
 
 mapButton.addEventListener('click', () => {
