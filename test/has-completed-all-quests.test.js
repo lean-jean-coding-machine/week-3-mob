@@ -1,16 +1,7 @@
+import hasCompletedAllQuests from '../src/map/has-completed-all-quests.js';
 const test = QUnit.test;
 
 QUnit.module('hasCompletedAllQuests');
-
-function hasCompletedAllQuests(user, quests) {
-    for(let i = 0; i < quests.length; i++) {
-        const quest = quests[i];
-        if(!user.completed[quest.id]) {
-            return false;
-        }
-    }
-    return true;
-}
 
 test('returns true if all tests have been completed', (assert) => {
     //Arrange

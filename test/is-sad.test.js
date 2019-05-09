@@ -1,14 +1,7 @@
+import isSad from '../src/map/is-sad.js';
 const test = QUnit.test;
 
 QUnit.module('isSad');
-
-function isSad(user) {
-    if(user.mood <= 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
 test('returns true if user is sad', (assert) => {
     //Arrange
