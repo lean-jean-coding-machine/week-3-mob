@@ -2,7 +2,7 @@ function makeUser(formData) {
     const user = {
         name: formData.get('name'),
         buddy: formData.get('buddy'),
-        mood: 30,
+        mood: 60,
         treats: 1, 
         completed: {},
     };
